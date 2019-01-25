@@ -1,0 +1,79 @@
+.div_container {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+}
+
+.entranceButton {
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    box-shadow: 0px 10px 50px #888888;
+    transition: box-shadow 2s;
+    cursor: none;
+    border-radius: 10px;
+}
+
+.entranceButton:hover {
+    box-shadow: 10px 20px 200px #888888;
+}
+
+.button1 {
+    top: 200px;
+    left: 25%;
+    background-color: #b3e8ca;
+}
+
+.button2 {
+    top: 200px;
+    right: 25%;
+    background-color: #6cb2eb;
+}
+
+.icon_image {
+    vertical-align: middle;
+}
+
+.footer {
+    height: 140px;
+    width: 100%;
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 2em 1.5em 1em;
+}
+
+#QKteam {
+    min-height: 610px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .div_container {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .button1 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 50px;
+        left: 25%;
+    }
+    .button2 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 25%;
+        top: 300px;
+    }
+    .icon_image{
+        width: 100px;
+        height: 100px;
+    }
+    .entranceButton {
+        line-height: 200px;
+    }
+}
