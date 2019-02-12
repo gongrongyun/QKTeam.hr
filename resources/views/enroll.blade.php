@@ -102,11 +102,11 @@
                         </div>
 
                         <div class="col-md-1 offset-md-1 custom-control custom-radio custom-control-inline">
-                            <input id="male" type="radio" class="custom-control-input" name="gender" @if(!old('gender')) checked @endif value="0"/>
+                            <input id="male" type="radio" class="custom-control-input" name="gender" @if(!old('gender')) checked @endif value="男"/>
                             <label for="male" class="custom-control-label">{{ __('男') }}</label>
                         </div>
                         <div class="col-md-1 custom-control custom-radio custom-control-inline">
-                            <input id="female" type="radio" class="custom-control-input" name="gender" @if(old('gender')) checked @endif value="1"/>
+                            <input id="female" type="radio" class="custom-control-input" name="gender" @if(old('gender')) checked @endif value="女"/>
                             <label for="female" class="custom-control-label">{{ __('女') }}</label>
                         </div>
                     </div>

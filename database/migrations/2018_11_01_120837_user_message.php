@@ -23,7 +23,7 @@ class UserMessage extends Migration
             $table->string('phoneNumber');
             $table->string('email');
             $table->string('qq');
-            $table->boolean('gender');
+            $table->text('gender');
             $table->text('selfIntroduction')->nullable();
             $table->string('blog')->nullable();
             $table->string('github')->nullable();
