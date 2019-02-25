@@ -21,8 +21,8 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
         \Illuminate\Support\Facades\DB::table('users')->insert([
-            'name' => 'gry',
-            'password' => \Illuminate\Support\Facades\Hash::make('991126gch'),
+            'name' => 'zzq',
+            'password' => \Illuminate\Support\Facades\Hash::make('12341234'),
         ]);
     }
 
