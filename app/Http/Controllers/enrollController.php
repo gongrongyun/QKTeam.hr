@@ -47,11 +47,11 @@ class enrollController extends Controller
         $user->selfIntroduction = $request->input('selfIntroduction');
         $user->blog = $request->input('blog');
         $user->github = $request->input('github');
-        if(json_encode($request->input('skills'))=='null')
-            $user->skills="sorry! the baby don't have any kills";
-        else
-            $user->skills = json_encode($request->input('skills'));
-//        $user->skills = json_encode($request->input('skills'));
+//        if(json_encode($request->input('skills'))=='null')
+//            $user->skills="sorry! the baby don't have any kills";
+//        else
+//            $user->skills = json_encode($request->input('skills'));
+        $user->skills = json_encode($request->input('skills'));
         $user->elseSkills = $request->input('elseSkills');
         $user->expectation = $request->input('expectation');
 
