@@ -6,30 +6,23 @@
         <tr>
             <th>姓名</th>
             <th>学号</th>
-            <th>学院</th>
-            <th>专业</th>
             <th>扣扣</th>
-            <th>邮箱</th>
-            <th>电话</th>
         </tr>
         </thead>
         <tbody>
         @if(isset($members))
         @foreach($members as $member)
-            <tr>
-                <td>
-                    <a href="{{route('introduce',[$member->id])}}">
-                        {{$member->name}}
-                    </a>
-                </td>
+            <tr class="infor_stu" onclick="location.href='<?php echo e(route('introduce',[$member->id])); ?>';">
+                <td>{{$member->name}}</td>
                 <td>{{$member->studentId}}</td>
-                <td>{{$member->college}}</td>
-                <td>{{$member->profession}}</td>
                 <td>{{$member->qq}}</td>
-                <td>{{$member->email}}</td>
-                <td>{{$member->phoneNumber}}</td>
             </tr>
         @endforeach
         @endif
     </table>
+    <style type="text/css">
+        .infor_stu:hover{
+            background-color: #a1f7ff;
+        }
+    </style>
 @endsection
