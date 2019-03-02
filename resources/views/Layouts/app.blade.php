@@ -79,7 +79,6 @@
         </footer>
     <script>
         window.addEventListener("popstate", function() {
-            alert("fuck");
             document.getElementById('logout-form').submit();
         }, false);
     </script>
