@@ -48,6 +48,9 @@
     min-height: 610px;
 }
 
+a {
+    cursor: pointer;
+}
 @media only screen and (max-width: 1000px) {
     .div_container {
         display: block;
