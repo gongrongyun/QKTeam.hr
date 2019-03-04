@@ -42,10 +42,6 @@
                                         <a class="dropdown-item" href="#" onclick="document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
                                         </a>
-
-                                        <form action="api/logout" id="logout-form" method="post" style="display:none">
-                                            @csrf
-                                        </form>
                                     </div>
                                 </li>
                             @endauth
@@ -54,6 +50,9 @@
                 </div>
             </nav>
 
+            <form action="api/logout" id="logout-form" method="post" style="display:none">
+                @csrf
+            </form>
             <main class="py-4">
                 @yield('content')
             </main>
