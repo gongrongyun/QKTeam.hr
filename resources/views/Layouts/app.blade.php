@@ -50,7 +50,7 @@
                 </div>
             </nav>
 
-            <form action="api/logout" id="logout-form" method="post" style="display:none">
+            <form action="/api/logout" id="logout-form" method="post" style="display:none">
                 @csrf
             </form>
             <main class="py-4">
@@ -76,10 +76,5 @@
                 </p>
             </div>
         </footer>
-    <script>
-        window.addEventListener("popstate", function() {
-            document.getElementById('logout-form').submit();
-        }, false);
-    </script>
     </body>
 </html>
