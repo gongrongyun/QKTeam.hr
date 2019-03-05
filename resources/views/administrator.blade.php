@@ -1,7 +1,7 @@
 @extends('Layouts.app')
 
 @section('content')
-    <form method="post" action="api/register">
+    <form method="post" action="/api/register">
         @csrf
 
         <div class="form-group">

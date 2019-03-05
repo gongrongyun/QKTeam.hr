@@ -19,7 +19,7 @@
                 <h3>{{ __('招新报名表') }}</h3>
             </div>
             <div class="card-body">
-                <form action="api/enroll" method="post">
+                <form action="/api/enroll" method="post">
                     @csrf
 
                     <div class="form-group row">
